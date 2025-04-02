@@ -4,7 +4,7 @@
     position: relative;
     // height: 85vh;
     padding-top: 6em;
-    padding-bottom: 55em;
+    padding-bottom: 10em;
 
     // background: linear-gradient(358deg, rgb(0 0 0 / 65%), rgb(0 0 0 / 74%)), url(../img/banner.jpg);
     // background: url(../img/bgImage.png);
@@ -121,7 +121,7 @@
 
 @media (min-width: 1025px) and (max-width: 1199.9px) {
     .hero-section {
-        padding-bottom: 45em;
+        padding-bottom: 10em;
 
         h1 {
             font-size: 60px;
@@ -134,7 +134,7 @@
     .hero-section {
 
         padding-top: 3em;
-        padding-bottom: 48em;
+        padding-bottom: 10em;
 
 
         &__contents {
@@ -163,34 +163,34 @@
 
 @media (min-width: 768px) and (max-width: 991.9px) {
     .hero-section {
-        padding-bottom: 80em;
+        padding-bottom: 6em;
     }
 }
 
 
 @media (min-width: 575px) and (max-width: 767.9px) {
     .hero-section {
-        padding-bottom: 75em;
+        padding-bottom: 3em;
     }
 }
 
 
 @media (min-width: 425px) and (max-width: 574.9px) {
     .hero-section {
-        padding-bottom: 70em;
+        padding-bottom: 3em;
     }
 }
 
 @media (min-width: 520px) and (max-width: 574.9px) {
     .hero-section {
-        padding-bottom: 75em;
+        padding-bottom: 3em;
     }
 }
 
 
 @media (min-width: 320px) and (max-width: 424.9px) {
     .hero-section {
-        padding-bottom: 65em;
+        padding-bottom: 3em;
     }
 }
 

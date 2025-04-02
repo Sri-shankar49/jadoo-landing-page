@@ -75,9 +75,24 @@
             padding: 1em 1em;
 
             .slider-content {
-             p{
-                line-height: 25px;
-             }
+                p {
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 374.9px) {
+    .testimonial-section {
+
+        .parent-div {
+
+            .slider-content {
+                p {
+                    line-height: 25px;
+                }
             }
         }
     }
