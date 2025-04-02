@@ -1,0 +1,173 @@
+.subscribe-section {
+    padding: 0em 0em 8em;
+
+    &__bg-image {
+        background: url(../img/subscribeBg.png);
+        // background-color: map-get($bg-color, "black");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        // height: 85vh;
+        text-align: center;
+        padding: 5em 0em;
+        position: relative;
+        z-index: 1;
+
+        h4 {
+            width: 75%;
+            margin: 0rem auto 4rem !important;
+            line-height: 54px;
+            font-size: 33px;
+            font-weight: 600;
+            color: map-get($text-color, "ash");
+        }
+
+        .form-flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 20px;
+
+            .email-icon {
+                position: absolute;
+                top: 10px;
+                left: 25px;
+
+                img {
+                    width: auto;
+                }
+            }
+
+            input {
+                width: 400px;
+                // height: 60px;
+                padding: 0.8em 4em;
+                border-radius: 10px;
+                border: none;
+                background-color: map-get($bg-color, "white");
+                font-size: 1rem;
+                color: map-get($text-color, "ash");
+
+                &:focus-visible {
+                    outline: none;
+                }
+
+                &::placeholder {
+                    color: map-get($text-color, "ash");
+                    font-size: 14px;
+                    font-weight: 400;
+                    font-family: $font-openSans;
+                }
+            }
+        }
+
+        .subscribe-send-image {
+            position: absolute;
+            top: -30px;
+            right: -28px;
+
+            img {
+                width: auto;
+            }
+        }
+
+        .round-ring-left {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                opacity: 0.2;
+            }
+        }
+
+        .round-ring-right {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                opacity: 0.2;
+            }
+        }
+
+        .subscribe-plus-image {
+            position: absolute;
+            bottom: -70px;
+            right: -50px;
+            z-index: -1;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .subscribe-section {
+        padding: 0em 0em 2em;
+
+        h4 {
+            font-size: 20px;
+            line-height: 40px;
+            margin-bottom: 2rem !important;
+        }
+
+
+        .subscribe-send-image {
+            right: 0;
+        }
+
+        .subscribe-plus-image {
+            right: 0;
+            bottom: 0;
+        }
+
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 767.9px) {
+    .subscribe-section {
+        padding: 0em 0em 2em;
+
+        &__bg-image {
+            padding: 3em 0em;
+
+            h4 {
+                font-size: 20px;
+                line-height: 40px;
+            }
+
+            .form-flex {
+                flex-direction: column;
+                align-items: center;
+                row-gap: 20px;
+
+                input {
+                    width: 100%;
+                }
+            }
+        }
+
+        .subscribe-send-image {
+            right: 0;
+        }
+
+        .subscribe-plus-image {
+            right: 0;
+            bottom: 0;
+        }
+    }
+}

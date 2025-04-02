@@ -1,0 +1,119 @@
+@use "../scss/variables/variables";
+
+.easy-fast-section {
+    padding: 4em 0em 4em;
+
+    h6 {
+        font-size: 1rem;
+        font-weight: 600;
+        color: map-get($text-color, "ash");
+        margin-bottom: 1rem !important;
+    }
+
+    h2 {
+        font-family: $font-volkhov;
+        color: map-get($text-color, "darkblueone");
+        text-transform: capitalize;
+    }
+
+    .row {
+        display: flex;
+        align-items: start;
+    }
+
+    .list-flex {
+        display: flex;
+        align-items: start;
+        column-gap: 25px;
+        margin-bottom: 1.5rem;
+
+        .yellow {
+            background-color: map-get($bg-color, "yellow");
+            padding: 10px 10px;
+            border: none;
+            border-radius: 10px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .orange {
+            background-color: map-get($bg-color, "orange");
+            padding: 10px 10px;
+            border: none;
+            border-radius: 10px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .green {
+            background-color: map-get($bg-color, "darkGreen");
+            padding: 10px 10px;
+            border: none;
+            border-radius: 10px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__content {
+            color: map-get($text-color, "ash");
+            width: 75%;
+
+            span {
+                font-size: 1rem;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .easy-image {
+
+        img {
+            width: fit-content !important;
+            ;
+            max-width: 100%;
+            margin: auto;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .easy-fast-section {
+        padding: 2em 0em 2em;
+
+        .list-flex {
+            &__content {
+                width: auto;
+            }
+        }
+
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 767.9px) {
+    .easy-fast-section {
+        padding: 2em 0em 2em;
+
+        .list-flex {
+            &__content {
+                width: auto;
+            }
+        }
+
+    }
+}

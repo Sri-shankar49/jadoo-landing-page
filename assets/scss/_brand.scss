@@ -1,0 +1,145 @@
+@use "./variables/variables";
+
+.brand-section {
+    padding: 2em 0em 4em;
+
+    // &__content {
+    //     text-align: center;
+    // }
+
+    .brand-images {
+        // background-color: red;
+        // width: 100px;
+        height: 100px;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            // width: 175px !important;
+            // height: 100px;
+            width: 125px !important;
+            // height: auto !important;
+            // margin: auto;
+            filter: grayscale(1);
+        }
+    }
+
+    .brand-slider {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 0px;
+
+        div {
+            padding: 1em 0em;
+        }
+    }
+
+    .slick-center {
+
+        .brand-images {
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            // margin: 10px 10px; 
+        }
+
+        img {
+            // transform: scale(1.2);
+            filter: grayscale(0);
+            transition: all ease-in-out .3s;
+        }
+
+    }
+
+    .slick-slide {
+        margin: 0px 10px;
+    }
+
+    .slick-slide img {
+        width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        color: black;
+    }
+
+
+    .slick-slide {
+        transition: all ease-in-out .3s;
+        opacity: 1;
+    }
+
+    .slick-active {
+        opacity: 1;
+    }
+
+    .slick-current {
+        opacity: 1;
+    }
+
+    // .slick-prev,
+    // .slick-next {
+    //     top: unset;
+    //     bottom: -60px !important;
+    // }
+
+    // .slick-prev {
+    //     left: 0px !important;
+    //     padding-right: 5px;
+    //     z-index: 111;
+    // }
+
+    // .slick-next {
+    //     right: 15px !important;
+    //     padding-left: 5px;
+    //     z-index: 111;
+    // }
+
+    // .slick-prev:before {
+    //     background: url("../icons/MaterialSymbolsChevronLeftRounded.svg") no-repeat;
+    //     background-position: center;
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    //     // background-color: $bgcolor-white;
+    //     padding: 5px 15px;
+    //     opacity: 1 !important;
+    //     content: "" !important;
+    //     border-radius: 50%;
+    // }
+
+    // .slick-next:before {
+    //     background: url("../icons/MaterialSymbolsChevronRightRounded.svg") no-repeat;
+    //     background-position: center;
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    //     // background-color: $bgcolor-white;
+    //     padding: 5px 15px;
+    //     opacity: 1 !important;
+    //     content: "" !important;
+    //     border-radius: 50%;
+    // }
+}
+
+
+
+/********** **********/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .brand-section {
+        padding: 2em 0em;
+    }
+}
+
+
+
+@media (min-width: 320px) and (max-width: 767.9px) {
+    .brand-section {
+        padding: 2em 0em;
+
+        .brand-slider {
+            div {
+                // padding: 0;
+            }
+        }
+    }
+}

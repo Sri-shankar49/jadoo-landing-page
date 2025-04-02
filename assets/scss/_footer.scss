@@ -1,0 +1,152 @@
+@use "./variables/variables";
+
+.footer-section {
+    padding: 4em 0em 0em;
+
+    .footer-logo {
+        margin-bottom: 2rem;
+    }
+
+    h5 {
+        font-size: 21px;
+        font-weight: 700;
+        color: map-get($text-color, "blackone");
+        margin-bottom: 2rem !important;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            margin-bottom: 1rem;
+
+            a {
+                color: map-get($text-color, "ash");
+                transition: color 0.3s ease;
+                text-decoration: none;
+            }
+        }
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 500;
+        color: map-get($text-color, "ash");
+        margin: 1rem 0rem !important;
+    }
+
+    .social-icons,
+    .store-icons {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+    }
+
+    &__copyright {
+        p {
+            font-size: 14px !important;
+            text-align: center;
+            padding: 1em 0em;
+            background-color: map-get($bg-color, "white");
+        }
+
+        a {
+            color: map-get($text-color, "ash");
+            font-weight: 500;
+            text-decoration: none !important;
+
+        }
+    }
+
+}
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer-section {
+
+        .store-icons {
+            img {
+                width: 100% !important;
+            }
+        }
+
+        .social-icons,
+        .store-icons {
+            justify-content: start;
+        }
+
+        .discover {
+            text-align: start;
+        }
+    }
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer-section {
+        padding: 2em 0em 0em;
+
+        .footer-logo {
+            margin-bottom: 1rem;
+
+            img {
+                width: 100px;
+                max-width: 100%;
+            }
+        }
+
+        p {
+            font-size: 16px !important;
+        }
+
+        h5 {
+            font-size: 18px;
+            margin-bottom: 1rem !important;
+        }
+
+        ul {
+            li {
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 767.9px) {
+    .footer-section {
+        padding: 2em 0em 0em;
+
+        .footer-logo {
+            margin-bottom: 1rem;
+        }
+
+        h5 {
+            font-size: 18px;
+            margin-bottom: 1rem !important;
+        }
+
+        p {
+            font-size: 16px !important;
+        }
+
+        .social-icons,
+        .store-icons {
+            justify-content: center;
+        }
+
+        .discover {
+            text-align: center;
+        }
+    }
+}

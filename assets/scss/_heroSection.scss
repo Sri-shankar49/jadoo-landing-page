@@ -1,0 +1,173 @@
+@use "./variables/variables";
+
+.hero-section {
+    position: relative;
+    height: 85vh;
+    padding-top: 6em;
+
+    // background: linear-gradient(358deg, rgb(0 0 0 / 65%), rgb(0 0 0 / 74%)), url(../img/banner.jpg);
+    // background: url(../img/bgImage.png);
+    // // background-color: map-get($bg-color, "black");
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+
+    &__contents {
+        padding: 5em 0em 0em 0em;
+
+        h5 {
+            font-size: 20px;
+            font-weight: 600;
+            color: map-get($text-color, "orange");
+            text-transform: uppercase;
+            margin-bottom: 1.5rem !important;
+        }
+
+        h1 {
+            font-size: 84px;
+            font-weight: 600;
+            font-family: $font-volkhov;
+            color: map-get($text-color, "darkblue");
+            margin-bottom: 1.5rem !important;
+
+        }
+
+        p {
+            color: map-get($text-color, "ash");
+            line-height: 30px;
+            width: 74%;
+        }
+
+        .underline {
+            position: relative;
+            display: inline-block;
+            font-family: $font-volkhov;
+        }
+
+        .underline::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 100%;
+            height: 8px;
+            background-color: #e76f51; /* Brush color */
+            border-radius: 4px;
+            transform: skewX(-10deg);
+        }
+    }
+
+    &__btns {
+        display: flex;
+        // justify-content: space-between;
+        align-items: center;
+        column-gap: 30px;
+    }
+
+    .play-demo-btn {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        // column-gap: 10px;
+
+        &__icon {
+            width: 40px;
+            height: 40px;
+            color: map-get($text-color, "white");
+            background-color: map-get($bg-color, "orange");
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            box-shadow: 0px 15px 15px -5px #df695185;
+        }
+
+        div {
+            color: map-get($text-color, "ash");
+        }
+    }
+
+    .traveller-img {
+        padding-top: 2em;
+        position: relative;
+        z-index: 0;
+
+        .left-flight-img {
+            position: absolute;
+            top: 75px;
+            left: 0;
+        }
+
+        .right-flight-img {
+            position: absolute;
+            top: 18%;
+            right: 0;
+            z-index: -1;
+        }
+    }
+
+    &__bg-image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .hero-section {
+
+        padding-top: 3em;
+
+        &__contents {
+
+            h5 {
+                font-size: 18px;
+            }
+
+            h1 {
+                font-size: 40px;
+                line-height: 60px;
+            }
+
+            
+        }
+
+        .play-demo-btn {
+            div {
+                font-size: 18px !important;
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 320px) and (max-width: 767.9px) {
+    .hero-section {
+
+        padding-top: 2em;
+
+
+        &__contents {
+
+            h5 {
+                font-size: 18px;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+        }
+
+        .play-demo-btn {
+            div {
+                font-size: 12px;
+            }
+        }
+    }
+}
